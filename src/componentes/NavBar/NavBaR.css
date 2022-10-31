@@ -1,0 +1,29 @@
+.menuNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ulNav{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding:12px;
+}
+a{
+    text-decoration: none;
+}
+.carrito{
+    height: 50px;
+    width: 50px;
+}
+.loguito{
+    height: 125px;
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+}
