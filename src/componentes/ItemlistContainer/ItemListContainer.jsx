@@ -1,12 +1,32 @@
 import React from 'react'
+import {useState, useEffect} from 'react'
 import Item from './Item'
+import getitems from '../mockService/mockservice'
 function ItemListContainer() {
+  const [products, setProducts] = useState([])
+  useEffect(
+    ()=>{
+      getitems().then((respuestadatos)=>{
+        setProducts(respuestadatos);
+      });
+    },
+    []
+  );
   return (
     <div>
-        <h1></h1>
-        <Item title="remera" price={4599} />
-        <Item title="Short" price={3598} />
-        <Item title="Short de baño" price={3799} />
+        {
+        products.map((product)=>{
+          return (
+            <Item
+            key={product.id}
+            id={product.id}
+            img={product.img}
+            title={product.title}
+            price={product.price}
+            description={product.descripcion}/>
+          )
+        })
+        }
     </div>
   )
 }
