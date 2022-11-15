@@ -2,15 +2,19 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import Item from './Item'
 import getitems from '../mockService/mockservice'
+import {useParams} from 'react-router-dom'
 function ItemListContainer() {
   const [products, setProducts] = useState([])
+  const {idCategory}= useParams()
+  async function getitemsAsync(){
+    let respuesta = await getitems(idCategory);
+    setProducts(respuesta)
+  }
   useEffect(
     ()=>{
-      getitems().then((respuestadatos)=>{
-        setProducts(respuestadatos);
-      });
+      getitemsAsync();
     },
-    []
+    [idCategory]
   );
   return (
     <div>
