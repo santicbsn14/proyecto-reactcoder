@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemlistContainer/ItemListContainer';
@@ -7,6 +6,7 @@ import ItemDetailContainer from './componentes/ItemDetail/Itemdetailcontainer';
 function App() {
 
   return (
+    <div className='app'>
     <BrowserRouter>
     <NavBar/>
     <Routes>
@@ -16,6 +16,7 @@ function App() {
       <Route path="*" element={<h1>404:Esta pagina no existe</h1>}/>
     </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 

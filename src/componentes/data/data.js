@@ -14,6 +14,6 @@ const products = [    {id: 1, title: "Almendras peladas x 1kg", descripcion:"Alm
 {id: 89, title: "Pan de masa madre", price: 858, img:"https://www.recetasderechupete.com/wp-content/uploads/2020/05/Pan-casero-pueblo-1.jpg", category: "pan"},
 {id:33, title:"Bayas de goji", price: 372, img:"https://t1.uc.ltmcdn.com/es/posts/7/7/8/como_hacer_una_infusion_de_bayas_de_goji_33877_paso_1_600.jpg",  category:"china"},
 {id:27, title:"Pan Integral con semillas", price: 351,img:"https://mandolina.co/wp-content/uploads/2020/11/Caseras-Pan.jpg.webp",  category:"pan"},
-{id:27, title:"Pan de avena", price: 359,img:"https://okdiario.com/img/2017/04/08/pan-de-avena-al-horno_-una-receta-saludable-para-desayunar-1-655x368.jpg",  category:"pan"}
+{id:93, title:"Pan de avena", price: 359,img:"https://okdiario.com/img/2017/04/08/pan-de-avena-al-horno_-una-receta-saludable-para-desayunar-1-655x368.jpg",  category:"pan"}
 ]
 export default products

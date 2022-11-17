@@ -1,18 +1,15 @@
 import products from "../data/data";
+
 function getitems(idCategory){
-    return new Promise((resolve)=>{
-        if(idCategory=== undefined){
-        setTimeout(() => {
-            resolve(products)
-        }, 2000);
-    }
-    else{
-        setTimeout(() => {
-            let productofiltrado = products.find((item)=>item.category === (idCategory))
-            resolve(productofiltrado)
-        }, 2000);
-    }
-    });
+    return new Promise (resolve => {
+        setTimeout(()=>{
+            if(idCategory === undefined){
+                resolve(products)
+            }else{
+                resolve(products.filter((item)=> item.category === idCategory))
+            }
+        },2000)
+    })
 }
 export function getSingleItem(idparam){
     return new Promise((resolve)=>{
