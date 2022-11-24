@@ -11,7 +11,7 @@ function Item(props) {
     <h5 className="card-title">{props.title}</h5>
     <p className="card-text">${props.price}</p>
     <button href="#" className="mx-auto btn btn-primary">Agregar al carrito</button>
-    <Link to={urldetail} element={<ItemDetailContainer/>}>
+    <Link to={urldetail} >
     <button type="button"className="btn btn-outline-success mx-auto my-1" >Ver Producto</button>
     </Link>
 
