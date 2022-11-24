@@ -28,7 +28,7 @@ function ItemListContainer() {
             title={product.title}
             price={product.price}
             description={product.descripcion}/>
-          );
+          )
         })
         }
     </div>
