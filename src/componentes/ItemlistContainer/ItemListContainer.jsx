@@ -16,6 +16,7 @@ function ItemListContainer() {
     },
     [idCategory]
   );
+
   return (
     <div>
         {

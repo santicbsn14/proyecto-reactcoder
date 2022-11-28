@@ -22,7 +22,6 @@ function Itemdetail({products}) {
                     <p className='text-center'> <strong>${products.price}</strong></p>
                     <p className="card-text">{products.descripcion}</p>
                     <Itemcount onAddToCart={onAddToCart}/>
-                    <a onClick={onAddToCart} className="mx-auto btn btn-primary">Agregar al carrito</a>
                   </div>
                 </div>
           </div>
