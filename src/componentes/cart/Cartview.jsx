@@ -3,11 +3,12 @@ import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {cartContext} from '../Context/CartContext'
 import './cartview.css'
-import { createOrder } from "../mockService/firestore"
+import { createOrder,  } from "../mockService/firestore"
 
 function Cartview() {
   const {cart, clearItem, priceInCart, removeItem} = useContext(cartContext)
   const navigate = useNavigate()
+
   async function checkOut(evt){
     const order = {
       buyer: {
