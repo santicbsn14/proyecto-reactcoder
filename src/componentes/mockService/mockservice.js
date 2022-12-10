@@ -1,4 +1,4 @@
-import products from "../data/data";
+import products from "../data/data"
 
 function getitems(idCategory){
     return new Promise (resolve => {

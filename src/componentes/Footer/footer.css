@@ -1,0 +1,6 @@
+.loguito{
+    height: 125px;
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+}

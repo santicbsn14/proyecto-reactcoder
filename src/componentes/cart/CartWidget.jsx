@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import {cartContext} from '../Context/CartContext'
+import {Link} from 'react-router-dom'
 
 
 function CartWidget() {
@@ -7,11 +8,13 @@ function CartWidget() {
   return (
     <div>
         <form className="d-flex">
-    <button type="button"  className="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <Link to='/cart'>
+    <button type="button"  className="btn btn-outline-dark "  >
         <i className="bi-cart-fill me-1"></i>
         Carrito
         <span className=" badge bg-dark text-white ms-1 rounded-pill">{miContext.itemsincart()}</span>
     </button>
+    </Link>
         </form>
 </div>
   )

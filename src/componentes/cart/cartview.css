@@ -1,0 +1,10 @@
+.boton-vaciar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.centrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
