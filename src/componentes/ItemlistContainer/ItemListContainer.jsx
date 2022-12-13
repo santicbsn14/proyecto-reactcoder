@@ -10,24 +10,24 @@ function ItemListContainer() {
   const {idCategory}= useParams()
   async function getitemsAsync(){
     if(!idCategory){
-    let respuesta = await getitems(idCategory);
-    setProducts(respuesta)}else{
+    let respuesta = await getitems();
+    setProducts(respuesta)}
+    else{
       let respuesta= await  getitemsByCategory(idCategory)
       setProducts(respuesta)
     }
   }
-  useEffect(
-    ()=>{
+  useEffect(()=>{
       getitemsAsync();
     },
-    [idCategory]
-  );
+    [idCategory]);
 
-  return <>
-    {
-     products  ? <Itemlist products={products}/>: <div className='text-center'><Loader/></div>
-    }
-    </>
+  return (
+    <div className='catalogo'>
+     {products  ? <Itemlist products={products}/>: <div className='text-center'><Loader/></div>}
+     </div>
+  )
+    
 }
 
 export default ItemListContainer
