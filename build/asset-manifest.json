@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e050407a.css",
+    "main.js": "/static/js/main.722ebfb4.js",
+    "static/js/787.a23cbf6d.chunk.js": "/static/js/787.a23cbf6d.chunk.js",
+    "static/media/logoLaGran.jpg": "/static/media/logoLaGran.68aceb7598d2d42c861d.jpg",
+    "index.html": "/index.html",
+    "main.e050407a.css.map": "/static/css/main.e050407a.css.map",
+    "main.722ebfb4.js.map": "/static/js/main.722ebfb4.js.map",
+    "787.a23cbf6d.chunk.js.map": "/static/js/787.a23cbf6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e050407a.css",
+    "static/js/main.722ebfb4.js"
+  ]
+}
