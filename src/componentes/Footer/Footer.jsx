@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 function Footer() {
   return (
-    <div>         
+    <div className='contenedor-footer'>         
       <footer className="py-5  bg-dark">
     <div className="container">
         <div className="row">

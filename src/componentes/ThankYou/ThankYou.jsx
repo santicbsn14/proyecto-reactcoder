@@ -21,8 +21,8 @@ function ThankYou() {
  )
   return (
     <div>
-    <div>Gracias por tu compra, tu id de compra es  {order.id}</div>
-    <div>Enviaremos la informacion de tu pedido a tu email: {order.buyer.email}</div>
+    <h1  className='text-center'>Gracias por tu compra, tu id de compra es  {order.id}</h1>
+    <h4 className='text-center' >Enviaremos la informacion de tu pedido a tu email: {order.buyer.email}</h4>
     </div>
     
   )

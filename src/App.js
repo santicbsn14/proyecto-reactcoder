@@ -22,7 +22,7 @@ function App() {
       <Route path="/thankyou/:idOrder" element={<ThankYou/>}/>
       <Route path="*" element={<h1>404:Esta pagina no existe</h1>}/>
     </Routes>
-    
+    <Footer/>
     </BrowserRouter>
     </CartContextProvider>
     

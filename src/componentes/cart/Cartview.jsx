@@ -17,7 +17,7 @@ function Cartview() {
         phone:'78r8390',
       },
       items: cart,
-      total: 0,
+      total: priceInCart(),
       date: new Date(),
     };
     const  orderID= await createOrder(order);
