@@ -1,7 +1,7 @@
 import React from 'react'
 import "./item.css";
 import {Link} from 'react-router-dom'
-import ItemDetailContainer from '../ItemDetail/Itemdetailcontainer';
+
 function Item(props) {
   const urldetail= `/detail/${props.id}`
   
