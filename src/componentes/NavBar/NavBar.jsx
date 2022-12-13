@@ -1,6 +1,6 @@
 import React from 'react'
 import "./NavBaR.css";
-import {Link, link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import CartWidget from '../cart/CartWidget';
 import ItemListContainer from '../ItemlistContainer/ItemListContainer';
 function NavBar() {
@@ -10,7 +10,7 @@ function NavBar() {
 
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
-      <Link to='/' element={<ItemListContainer/>}><img className='loguito'
+      <Link to='/' element={<ItemListContainer/>}><img alt='logopagina' className='loguito'
               src={require('../imagenes/logoLaGran.jpg')}
               /></Link>
             <div className="container px-4 px-lg-5">
