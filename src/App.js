@@ -14,6 +14,8 @@ function App() {
     <CartContextProvider>
     <BrowserRouter>
     <NavBar/>
+    <h1 className='text-center'>Bienvenidos a la tienda online de "La gran Nuez"</h1>
+
     <Routes>
       <Route path="/" element={<ItemListContainer/>}/>
       <Route path="/detail/:id" element={<ItemDetailContainer/>}/>

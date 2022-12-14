@@ -23,7 +23,10 @@ function NavBar() {
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link to='/category/frutosSecos' className="dropdown-item" >Frutos Secos</Link></li>
                                 <li><Link to='/category/harinas'  className="dropdown-item" >Harinas</Link></li>
-                                <li><Link to='/category/semillas' className="dropdown-item" >semillas</Link></li>
+                                <li><Link to='/category/semillas' className="dropdown-item" >Semillas</Link></li>
+                                <li><Link to='/category/untables' className="dropdown-item" >Untables</Link></li>
+                                <li><Link to='/category/bebidas' className="dropdown-item" >Bebidas</Link></li>
+                                <li><Link to='/category/pan' className="dropdown-item" >Panes</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item"><Link class="nav-link" to="/contacto">Contacto</Link></li>
