@@ -4,6 +4,7 @@ import Itemdetail from './Itemdetail';
 import "./itemdetail.css";
 import {getSingleItem} from '../mockService/firestore'
 import {useParams} from 'react-router-dom'
+import Loader from '../loaders/Loader'
 function ItemDetailContainer() {
   const {id}= useParams()
   const [isLoading, setisLoading]= useState(true)
@@ -16,9 +17,7 @@ setisLoading(false)})
  useEffect(()=>{
   getitemsAsync();
  }, [id]);
- if(isLoading) return (<div className="loadingio-spinner-interwind-lu6je3gk35e "><div className="ldio-7uip3qwc579">
- <div><div><div><div></div></div></div><div><div><div></div></div></div></div>
- </div></div>
+ if(isLoading) return (<div style={{marginTop:'0px', position:'relative', left:'550px'}}> <Loader/></div>
  )
   return (
     <div>

@@ -8,7 +8,6 @@ import { createOrder,  } from "../mockService/firestore"
 function Cartview() {
   const {cart, clearItem, priceInCart, removeItem} = useContext(cartContext)
   const navigate = useNavigate()
-
   async function checkOut(evt){
     const order = {
       buyer: {
@@ -22,6 +21,7 @@ function Cartview() {
     };
     const  orderID= await createOrder(order);
     navigate(`/thankyou/${orderID}`)
+    clearItem()
   }
   if(cart.length===0) return <div className="row boton-vaciar"><h4 className="col-lg-12 text-center">Que esperas para agregar productos al carrito?</h4><Link to='/'><div type="button" style={{display:'flex', flexDirection:'row', justifyContent:`center`, width:'400px'}}  className=" btn btn-outline-success mx-auto my-1" >Ver los productos de la tienda!</div></Link></div>
   return (

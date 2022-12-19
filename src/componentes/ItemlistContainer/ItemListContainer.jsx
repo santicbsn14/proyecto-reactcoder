@@ -24,7 +24,8 @@ function ItemListContainer() {
 
   return (
     <div className='catalogo'>
-     {products  ? <Itemlist products={products}/>: <div className='text-center'><Loader/></div>}
+      <h1 className='text-center'>Bienvenidos a la tienda online de "La gran Nuez"</h1>
+     {products  ? <Itemlist products={products}/>: <div style={{marginTop:'0px', position:'relative', left:'550px'}}><Loader/></div>}
      </div>
   )
     
