@@ -4,17 +4,15 @@ import {Link, useNavigate} from 'react-router-dom'
 import {cartContext} from '../Context/CartContext'
 import './cartview.css'
 import { createOrder,  } from "../mockService/firestore"
+import FormOrder from "../FormOrder/FormOrder"
 
 function Cartview() {
   const {cart, clearItem, priceInCart, removeItem} = useContext(cartContext)
   const navigate = useNavigate()
-  async function checkOut(evt){
+  async function checkOut(evt,data){
+    
     const order = {
-      buyer: {
-        name: 'Santiago',
-        email:'santicbsn9@gmail.com',
-        phone:'78r8390',
-      },
+      buyer:data,
       items: cart,
       total: priceInCart(),
       date: new Date(),
@@ -42,12 +40,12 @@ function Cartview() {
         )
       })}
       <div style={{display:'flex', justifyContent:'space-around'}} className="">PRECIO TOTAL: <strong>${priceInCart()}</strong></div>
+      <FormOrder onSumbit={checkOut}/>
       <div className="boton-vaciar">
         <Link to='/'>
       <button   className="  text-center btn btn-outline-success mx-2  ">SEGUIR COMPRANDO</button>
       </Link>
       <button onClick={clearItem}  className="  btn-outline-danger btn mx-2">VACIAR CARRITO</button>
-      <button onClick={checkOut}   className=" text-center btn btn-outline-success mx-2 ">FINALIZAR COMPRA</button>
       </div>
     </div>
   )

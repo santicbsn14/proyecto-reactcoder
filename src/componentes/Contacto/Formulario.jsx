@@ -36,7 +36,7 @@ function Formulario() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <label  className="form-label" >Email</label>
-              <input type= "text" className="form-control" name="email" />
+              <input type= "email" className="form-control" name="email" />
               <b id="email"></b>
             </div>
             <div className="col-6 col-md-12 col-sm-12">

@@ -6,7 +6,7 @@ function Item(props) {
   const urldetail= `/detail/${props.id}`
   
   return (
-<div className='col mx-1  mb-5' >
+<div className='col col-mb-6 col-sm-12 mx-1 itemssm  mb-5' >
 <div className="card h-100"> 
   <img src={props.img} style={{width:'286px', height:'190px'}} className="card-img-top" alt="..."/>
   <div className="card-body">
