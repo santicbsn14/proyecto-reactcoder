@@ -29,7 +29,7 @@ function NavBar() {
                                 <li><Link to='/category/pan' className="dropdown-item" >Panes</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item"><Link class="nav-link" to="/contacto">Contacto</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/contacto">Contacto</Link></li>
                     </ul>
                     <CartWidget/>
                 </div>

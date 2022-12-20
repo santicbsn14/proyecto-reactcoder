@@ -7,10 +7,11 @@ import ItemDetailContainer from './componentes/ItemDetail/Itemdetailcontainer';
 import {CartContextProvider} from './componentes/Context/CartContext'
 import Cartview from './componentes/cart/Cartview';
 import ThankYou from './componentes/ThankYou/ThankYou';
+import Formulario from './componentes/Contacto/Formulario';
 function App() {
 
   return (
-    <div className='app'>
+    <div className='app' style={{margin:'0px'}}>
     <CartContextProvider>
     <BrowserRouter>
     <NavBar/>
@@ -22,7 +23,7 @@ function App() {
       <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
       <Route path='/cart' element={<Cartview/>}/>
       <Route path="/thankyou/:idOrder" element={<ThankYou/>}/>
-      <Route path="*" element={<h1>404:Esta pagina no existe</h1>}/>
+      <Route path="/contacto" element={<Formulario/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
