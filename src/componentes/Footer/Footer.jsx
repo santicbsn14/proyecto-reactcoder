@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook,faYoutube, faTwitter} from  '@fortawesome/free-brands-svg-icons'
 import './footer.css'
 function Footer() {
   return (
@@ -16,7 +18,9 @@ function Footer() {
         </div>
         <div className="col-lg-4">
             <p className="text-success">Encontranos en nuestras redes sociales:</p>
-
+            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faTwitter} />
         </div>
     </div>
     </div>

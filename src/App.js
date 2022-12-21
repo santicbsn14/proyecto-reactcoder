@@ -11,7 +11,7 @@ import Formulario from './componentes/Contacto/Formulario';
 function App() {
 
   return (
-    <div className='app' style={{margin:'0px'}}>
+    <div className='app' >
     <CartContextProvider>
     <BrowserRouter>
     <NavBar/>
